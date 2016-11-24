@@ -3,19 +3,67 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PacoteDiretor;
+package PacoteFuncionario;
+
+import java.awt.Dimension;
+import java.awt.GraphicsEnvironment;
+import java.awt.event.ActionEvent;
+import javax.swing.AbstractAction;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
+import javax.swing.Timer;
 
 /**
  *
  * @author MaryBeds
  */
-public class SocioPendenteView extends javax.swing.JInternalFrame {
+public class EntradaSaidaView extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form SocioPendenteView
+     * Creates new form EntradaSaidaView
      */
-    public SocioPendenteView() {
+    public EntradaSaidaView() {
         initComponents();
+           
+        createAndStartDownwardTimer(jLabel1);
+        
+    }
+    
+    private void createAndStartDownwardTimer(final JLabel frame) {
+        new Timer(25, new AbstractAction() {
+            int screenHeight = GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds().height;
+            int x = frame.getX();
+
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+                createAndStartUpwardTimer(1000);//15milis approx latency
+                ((Timer) ae.getSource()).stop();
+                
+            }
+        }).start();
+    }
+
+    private void createAndStartUpwardTimer(int initialDelay) {
+        Timer t = new Timer(25, new AbstractAction() {
+            int x = 0;
+
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                
+                if (jLabel1.getX() > 0) {
+                    x = jLabel1.getX() - 10;
+                    jLabel1.setLocation(x, jLabel1.getY());
+                
+                }
+                
+            }
+      
+            
+        });
+        t.setInitialDelay(initialDelay);
+        t.start();
     }
 
     /**
@@ -29,54 +77,30 @@ public class SocioPendenteView extends javax.swing.JInternalFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTableSociosPendentes = new javax.swing.JTable();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(null);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel1.setText("Sócios Pendentes");
-
-        jScrollPane1.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
-
-        jTableSociosPendentes.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "Nome", "Email", "Quem indicou"
-            }
-        ));
-        jScrollPane1.setViewportView(jTableSociosPendentes);
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/golfCard.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(104, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(153, 153, 153))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(102, 102, 102))
+                .addContainerGap(399, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(67, 67, 67))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(157, 157, 157)
+                .addGap(81, 81, 81)
                 .addComponent(jLabel1)
-                .addGap(47, 47, 47)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(217, Short.MAX_VALUE))
+                .addContainerGap(790, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -97,7 +121,5 @@ public class SocioPendenteView extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTableSociosPendentes;
     // End of variables declaration//GEN-END:variables
 }

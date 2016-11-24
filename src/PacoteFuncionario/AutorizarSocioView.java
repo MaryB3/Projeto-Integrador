@@ -9,12 +9,12 @@ package PacoteFuncionario;
  *
  * @author MaryBeds
  */
-public class SociosView extends javax.swing.JInternalFrame {
+public class AutorizarSocioView extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form SociosView
+     * Creates new form AutorizarSocioView
      */
-    public SociosView() {
+    public AutorizarSocioView() {
         initComponents();
     }
 
@@ -65,7 +65,7 @@ public class SociosView extends javax.swing.JInternalFrame {
                 {null, null, null}
             },
             new String [] {
-                "Nome", "Telefone", "Status"
+                "Nome", "Telefone", "Indicado Por"
             }
         ));
         jScrollPane1.setViewportView(TabelaSocios);
@@ -103,11 +103,11 @@ public class SociosView extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

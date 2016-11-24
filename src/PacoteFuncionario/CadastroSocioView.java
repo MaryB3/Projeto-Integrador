@@ -35,37 +35,31 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
         cpfTxtField = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         telTxtField = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        celTxtField = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         emailTxtField = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         ruaTxtField = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        numeroTxtField = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        setorTxtField = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        cidadeTxtField = new javax.swing.JTextField();
-        ufTxtField = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         boletoCheckBox = new javax.swing.JCheckBox();
         cartaoCheckBox = new javax.swing.JCheckBox();
         SalvarPressed = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        listaDependentes = new javax.swing.JList<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         nomeCartaoTxtField = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        numCartaoTxtField = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         dataValidadeTxtField = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         cvcTxtField = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        telTxtField1 = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        TabelaSocios = new javax.swing.JTable();
         addDependentePressed = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jLabel20 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(null);
@@ -84,7 +78,7 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
         cpfLbl.setForeground(new java.awt.Color(158, 189, 83));
         cpfLbl.setText("CPF:");
 
-        cpfTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
+        cpfTxtField.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
         cpfTxtField.setForeground(new java.awt.Color(153, 153, 153));
         cpfTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
 
@@ -92,69 +86,25 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
         jLabel3.setForeground(new java.awt.Color(158, 189, 83));
         jLabel3.setText("TEL.");
 
-        telTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
+        telTxtField.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
         telTxtField.setForeground(new java.awt.Color(153, 153, 153));
         telTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
-
-        jLabel4.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel4.setText("CEL.");
-
-        celTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
-        celTxtField.setForeground(new java.awt.Color(153, 153, 153));
-        celTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
 
         jLabel5.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(158, 189, 83));
         jLabel5.setText("EMAIL:");
 
-        emailTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
+        emailTxtField.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
         emailTxtField.setForeground(new java.awt.Color(153, 153, 153));
         emailTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
 
         jLabel6.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel6.setText("RUA:");
+        jLabel6.setText("ENDEREÇO:");
 
-        ruaTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
+        ruaTxtField.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
         ruaTxtField.setForeground(new java.awt.Color(153, 153, 153));
         ruaTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
-
-        jLabel7.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel7.setText("N˚:");
-
-        numeroTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
-        numeroTxtField.setForeground(new java.awt.Color(153, 153, 153));
-        numeroTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
-
-        jLabel8.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel8.setText("SETOR:");
-
-        setorTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
-        setorTxtField.setForeground(new java.awt.Color(153, 153, 153));
-        setorTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
-
-        jLabel9.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel9.setText("CIDADE:");
-
-        cidadeTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
-        cidadeTxtField.setForeground(new java.awt.Color(153, 153, 153));
-        cidadeTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
-
-        ufTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
-        ufTxtField.setForeground(new java.awt.Color(153, 153, 153));
-        ufTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
-
-        jLabel10.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel10.setText("UF:");
-
-        jLabel11.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel11.setText("FORMA DE PAGAMENTO");
 
         boletoCheckBox.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
         boletoCheckBox.setForeground(new java.awt.Color(158, 189, 83));
@@ -162,7 +112,7 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
 
         cartaoCheckBox.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
         cartaoCheckBox.setForeground(new java.awt.Color(158, 189, 83));
-        cartaoCheckBox.setText("CARTÃO DE CRÉTIDO");
+        cartaoCheckBox.setText("DÉBITO AUTOMÁTICO");
         cartaoCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cartaoCheckBoxActionPerformed(evt);
@@ -178,51 +128,30 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel12.setText("ADICIONAR DEPENDENTE(S)");
-
-        listaDependentes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83)));
-        listaDependentes.setFont(new java.awt.Font("Avenir Next", 0, 12)); // NOI18N
-        listaDependentes.setForeground(new java.awt.Color(153, 153, 153));
-        listaDependentes.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane1.setViewportView(listaDependentes);
-
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel13.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel13.setText("NOME NO CARTÃO:");
+        jLabel13.setText("BANCO");
 
-        nomeCartaoTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
+        nomeCartaoTxtField.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
         nomeCartaoTxtField.setForeground(new java.awt.Color(153, 153, 153));
         nomeCartaoTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
 
-        jLabel14.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel14.setText("N˚:");
-
-        numCartaoTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
-        numCartaoTxtField.setForeground(new java.awt.Color(153, 153, 153));
-        numCartaoTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
-
         jLabel15.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel15.setText("DATA DE VALIDADE:");
+        jLabel15.setText("AGÊNCIA:");
 
-        dataValidadeTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
+        dataValidadeTxtField.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
         dataValidadeTxtField.setForeground(new java.awt.Color(153, 153, 153));
         dataValidadeTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
 
         jLabel16.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(158, 189, 83));
-        jLabel16.setText("CVC:");
+        jLabel16.setText("CONTA:");
+        jLabel16.setToolTipText("");
 
-        cvcTxtField.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
+        cvcTxtField.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
         cvcTxtField.setForeground(new java.awt.Color(153, 153, 153));
         cvcTxtField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
 
@@ -231,28 +160,22 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel15))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel14))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel15)
-                        .addGap(3, 3, 3)))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(dataValidadeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
+                        .addComponent(dataValidadeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cvcTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(nomeCartaoTxtField, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
-                        .addComponent(numCartaoTxtField)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(nomeCartaoTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -261,97 +184,137 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(nomeCartaoTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(numCartaoTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
                     .addComponent(dataValidadeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15)
                     .addComponent(jLabel16)
                     .addComponent(cvcTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel17.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(158, 189, 83));
+        jLabel17.setText("DATA DE NASCIMENTO:");
+
+        telTxtField1.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
+        telTxtField1.setForeground(new java.awt.Color(153, 153, 153));
+        telTxtField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
+
+        jLabel18.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(158, 189, 83));
+        jLabel18.setText("QUEM INDICOU:");
+
+        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
+        jComboBox1.setFont(new java.awt.Font("Avenir Next", 1, 14)); // NOI18N
+        jComboBox1.setForeground(new java.awt.Color(153, 153, 153));
+        jComboBox1.setMaximumRowCount(100);
+        jComboBox1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
+
+        jScrollPane1.setFont(new java.awt.Font("Avenir Next", 0, 13)); // NOI18N
+
+        TabelaSocios.setFont(new java.awt.Font("Avenir Next", 0, 14)); // NOI18N
+        TabelaSocios.setForeground(new java.awt.Color(153, 153, 153));
+        TabelaSocios.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Nome", "Grau Parentesco"
+            }
+        ));
+        jScrollPane1.setViewportView(TabelaSocios);
 
         addDependentePressed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Funcionario/Botão.png"))); // NOI18N
         addDependentePressed.setBorderPainted(false);
         addDependentePressed.setContentAreaFilled(false);
 
+        jLabel12.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(158, 189, 83));
+        jLabel12.setText("ADICIONAR DEPENDENTE(S)");
+
+        jLabel19.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(158, 189, 83));
+        jLabel19.setText("FORMA DE PAGAMENTO");
+
+        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
+        jComboBox2.setFont(new java.awt.Font("Avenir Next", 1, 14)); // NOI18N
+        jComboBox2.setForeground(new java.awt.Color(153, 153, 153));
+        jComboBox2.setMaximumRowCount(4);
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SOLTEIRO", "CASADO", "DIVORCIADO", "VIÚVO" }));
+        jComboBox2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(158, 189, 83), 2));
+
+        jLabel20.setFont(new java.awt.Font("Avenir Next", 1, 13)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(158, 189, 83));
+        jLabel20.setText("ESTADO CIVIL:");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(SalvarPressed, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(175, 175, 175))
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(161, 161, 161)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(176, 176, 176)
                         .addComponent(addDependentePressed)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 81, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ruaTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(telTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(celTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(cpfLbl)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cpfTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(NomeLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(nomeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(emailTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(108, 108, 108))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(SalvarPressed, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(197, 197, 197))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel9))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11)
+                                .addComponent(nomeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(numeroTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(setorTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(cpfLbl, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(telTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                                                .addComponent(jLabel3)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(telTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(cpfTxtField)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(boletoCheckBox)
-                                .addGap(42, 42, 42)
-                                .addComponent(cartaoCheckBox))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(cidadeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(ufTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jScrollPane1)))
-                        .addGap(108, 108, 108))))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel18))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(emailTxtField)
+                                    .addComponent(jLabel19)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(boletoCheckBox)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(cartaoCheckBox))
+                                    .addComponent(ruaTxtField)
+                                    .addComponent(jComboBox1, 0, 397, Short.MAX_VALUE)))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -368,9 +331,13 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(telTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(celTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel17)
+                    .addComponent(telTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel20))
+                .addGap(15, 15, 15)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(emailTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -380,36 +347,28 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
                     .addComponent(ruaTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(setorTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(numeroTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(cidadeTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ufTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addDependentePressed))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel12)))
+                    .addComponent(jLabel18)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(boletoCheckBox)
                     .addComponent(cartaoCheckBox))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(addDependentePressed))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel12)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addComponent(SalvarPressed, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addGap(30, 30, 30))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -438,42 +397,36 @@ public class CadastroSocioView extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel NomeLbl;
     private javax.swing.JButton SalvarPressed;
+    private javax.swing.JTable TabelaSocios;
     private javax.swing.JButton addDependentePressed;
     private javax.swing.JCheckBox boletoCheckBox;
     private javax.swing.JCheckBox cartaoCheckBox;
-    private javax.swing.JTextField celTxtField;
-    private javax.swing.JTextField cidadeTxtField;
     private javax.swing.JLabel cpfLbl;
     private javax.swing.JTextField cpfTxtField;
     private javax.swing.JTextField cvcTxtField;
     private javax.swing.JTextField dataValidadeTxtField;
     private javax.swing.JTextField emailTxtField;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JList<String> listaDependentes;
     private javax.swing.JTextField nomeCartaoTxtField;
     private javax.swing.JTextField nomeTxtField;
-    private javax.swing.JTextField numCartaoTxtField;
-    private javax.swing.JTextField numeroTxtField;
     private javax.swing.JTextField ruaTxtField;
-    private javax.swing.JTextField setorTxtField;
     private javax.swing.JTextField telTxtField;
-    private javax.swing.JTextField ufTxtField;
+    private javax.swing.JTextField telTxtField1;
     // End of variables declaration//GEN-END:variables
 }

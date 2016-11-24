@@ -19,20 +19,44 @@ public class FuncionarioInterface extends javax.swing.JFrame {
     private boolean isCadastrarSocios = false;
     private boolean isChales = false;
     private boolean isCadastrarChales = false;
+    private boolean isAutorizarSocio = false;
+    private boolean isDetalheSocio = false;
+    private boolean isEntradaSaida = false;
 
     SociosView socioFrame = new SociosView();
     CadastroSocioView cadastroSocioFrame = new CadastroSocioView();
+    ChalesView chalesFrame = new ChalesView();
+    CadastroChalesView cadastroChaleFrame = new CadastroChalesView();
+    AutorizarSocioView autorizarFrame = new AutorizarSocioView();
+    DetalheSocioView detalheSocioFrame = new DetalheSocioView();
+    EntradaSaidaView entradaSaidaFrame = new EntradaSaidaView();
 
     public FuncionarioInterface() {
         initComponents();
 
-        DesktopMenu.add(socioFrame);
-        socioFrame.setVisible(true);
-        socioFrame.setUI(null);
-        
+        DesktopMenu.add(entradaSaidaFrame);
+        entradaSaidaFrame.setVisible(true);
+        entradaSaidaFrame.setUI(null);
+
         DesktopMenu.add(cadastroSocioFrame);
         cadastroSocioFrame.setVisible(false);
         cadastroSocioFrame.setUI(null);
+
+        DesktopMenu.add(chalesFrame);
+        chalesFrame.setVisible(false);
+        chalesFrame.setUI(null);
+
+        DesktopMenu.add(cadastroChaleFrame);
+        cadastroChaleFrame.setVisible(false);
+        cadastroChaleFrame.setUI(null);
+        
+        DesktopMenu.add(autorizarFrame);
+        autorizarFrame.setVisible(false);
+        autorizarFrame.setUI(null);
+        
+//        DesktopMenu.add(detalheSocioFrame);
+//        detalheSocioFrame.setVisible(false);
+//        detalheSocioFrame.setUI(null);
     }
 
     /**
@@ -51,6 +75,8 @@ public class FuncionarioInterface extends javax.swing.JFrame {
         ChalesPressed = new javax.swing.JButton();
         CadastrarChalesPressed = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        AutorizarSocioPressed = new javax.swing.JButton();
         DesktopMenu = new javax.swing.JDesktopPane();
         jPanel3 = new javax.swing.JPanel();
 
@@ -104,9 +130,25 @@ public class FuncionarioInterface extends javax.swing.JFrame {
 
         jButton5.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Sair");
+        jButton5.setText("Registrar Entrada/Saída");
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
+
+        jButton6.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Sair");
+        jButton6.setBorderPainted(false);
+        jButton6.setContentAreaFilled(false);
+
+        AutorizarSocioPressed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Diretor/AutorizarSocio.png"))); // NOI18N
+        AutorizarSocioPressed.setBorderPainted(false);
+        AutorizarSocioPressed.setContentAreaFilled(false);
+        AutorizarSocioPressed.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Diretor/AutorizarSocioPressed.png"))); // NOI18N
+        AutorizarSocioPressed.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AutorizarSocioPressedActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -116,30 +158,46 @@ public class FuncionarioInterface extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(SociosPressed)
-                            .addComponent(CadastrarSocioPressed)
-                            .addComponent(ChalesPressed)
-                            .addComponent(CadastrarChalesPressed)))
+                        .addComponent(SociosPressed))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(141, 141, 141)
-                        .addComponent(jButton5)))
+                        .addGap(48, 48, 48)
+                        .addComponent(jButton5))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(AutorizarSocioPressed))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(CadastrarSocioPressed))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(CadastrarChalesPressed))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(ChalesPressed)))
                 .addContainerGap(16, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton6)
+                .addGap(142, 142, 142))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(198, 198, 198)
-                .addComponent(SociosPressed)
-                .addGap(26, 26, 26)
-                .addComponent(CadastrarSocioPressed)
-                .addGap(26, 26, 26)
-                .addComponent(ChalesPressed)
-                .addGap(26, 26, 26)
-                .addComponent(CadastrarChalesPressed)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(jButton5)
-                .addGap(14, 14, 14))
+                .addGap(132, 132, 132)
+                .addComponent(SociosPressed)
+                .addGap(18, 18, 18)
+                .addComponent(AutorizarSocioPressed)
+                .addGap(18, 18, 18)
+                .addComponent(CadastrarSocioPressed)
+                .addGap(18, 18, 18)
+                .addComponent(CadastrarChalesPressed)
+                .addGap(18, 18, 18)
+                .addComponent(ChalesPressed)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton6)
+                .addGap(17, 17, 17))
         );
 
         DesktopMenu.setBackground(new java.awt.Color(255, 255, 255));
@@ -193,12 +251,20 @@ public class FuncionarioInterface extends javax.swing.JFrame {
             isCadastrarSocios = false;
             isChales = false;
             isCadastrarChales = false;
-            
+            isAutorizarSocio = false;
+            isDetalheSocio = false;
+
             SociosPressed.setSelected(true);
             CadastrarSocioPressed.setSelected(false);
-            
+            ChalesPressed.setSelected(false);
+            CadastrarChalesPressed.setSelected(false);
+            AutorizarSocioPressed.setSelected(false);
+
             socioFrame.setVisible(true);
             cadastroSocioFrame.setVisible(false);
+            chalesFrame.setVisible(false);
+            cadastroChaleFrame.setVisible(false);
+            autorizarFrame.setVisible(false);
 
         }
     }//GEN-LAST:event_SociosPressedActionPerformed
@@ -216,23 +282,123 @@ public class FuncionarioInterface extends javax.swing.JFrame {
             isSocios = false;
             isChales = false;
             isCadastrarChales = false;
-           
+            isAutorizarSocio = false;
+            isDetalheSocio = false;
+
             CadastrarSocioPressed.setSelected(true);
             SociosPressed.setSelected(false);
+            ChalesPressed.setSelected(false);
+            CadastrarChalesPressed.setSelected(false);
+            AutorizarSocioPressed.setSelected(false);
             
+
             cadastroSocioFrame.setVisible(true);
             socioFrame.setVisible(false);
+            chalesFrame.setVisible(false);
+            cadastroChaleFrame.setVisible(false);
+            autorizarFrame.setVisible(false);
+            detalheSocioFrame.setVisible(false);
 
         }
     }//GEN-LAST:event_CadastrarSocioPressedActionPerformed
 
     private void ChalesPressedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChalesPressedActionPerformed
         // TODO add your handling code here:
+        if (isChales) {
+            isChales = false;
+            ChalesPressed.setSelected(false);
+            chalesFrame.setVisible(false);
+
+        } else {
+
+            isChales = true;
+            isSocios = false;
+            isCadastrarSocios = false;
+            isCadastrarChales = false;
+            isAutorizarSocio = false;
+            isDetalheSocio = false;
+
+            ChalesPressed.setSelected(true);
+            CadastrarSocioPressed.setSelected(false);
+            SociosPressed.setSelected(false);
+            CadastrarChalesPressed.setSelected(false);
+            AutorizarSocioPressed.setSelected(false);
+           
+
+            chalesFrame.setVisible(true);
+            cadastroSocioFrame.setVisible(false);
+            socioFrame.setVisible(false);
+            cadastroSocioFrame.setVisible(false);
+            autorizarFrame.setVisible(false);
+            detalheSocioFrame.setVisible(false);
+
+        }
     }//GEN-LAST:event_ChalesPressedActionPerformed
 
     private void CadastrarChalesPressedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CadastrarChalesPressedActionPerformed
         // TODO add your handling code here:
+        if (isCadastrarChales) {
+            isCadastrarChales = false;
+            CadastrarChalesPressed.setSelected(false);
+            chalesFrame.setVisible(false);
+
+        } else {
+
+            isCadastrarChales = true;
+            isSocios = false;
+            isCadastrarSocios = false;
+            isChales = false;
+            isAutorizarSocio = false;
+            isDetalheSocio = false;
+
+            CadastrarChalesPressed.setSelected(true);
+            CadastrarSocioPressed.setSelected(false);
+            SociosPressed.setSelected(false);
+            ChalesPressed.setSelected(false);
+            AutorizarSocioPressed.setSelected(false);
+
+            cadastroChaleFrame.setVisible(true);
+            cadastroSocioFrame.setVisible(false);
+            socioFrame.setVisible(false);
+            chalesFrame.setVisible(false);
+            autorizarFrame.setVisible(false);
+            detalheSocioFrame.setVisible(false);
+
+        }
     }//GEN-LAST:event_CadastrarChalesPressedActionPerformed
+
+    private void AutorizarSocioPressedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutorizarSocioPressedActionPerformed
+        // TODO add your handling code here:
+        if (isAutorizarSocio) {
+            isAutorizarSocio = false;
+            AutorizarSocioPressed.setSelected(false);
+            autorizarFrame.setVisible(false);
+
+        } else {
+
+            isAutorizarSocio = true;
+            isCadastrarChales = false;
+            isSocios = false;
+            isCadastrarSocios = false;
+            isChales = false;
+            isDetalheSocio = false;
+            
+
+            AutorizarSocioPressed.setSelected(true);
+            CadastrarChalesPressed.setSelected(false);
+            CadastrarSocioPressed.setSelected(false);
+            SociosPressed.setSelected(false);
+            ChalesPressed.setSelected(false);
+
+            autorizarFrame.setVisible(true);
+            cadastroChaleFrame.setVisible(false);
+            cadastroSocioFrame.setVisible(false);
+            socioFrame.setVisible(false);
+            chalesFrame.setVisible(false);
+            detalheSocioFrame.setVisible(false);
+
+        }
+    }//GEN-LAST:event_AutorizarSocioPressedActionPerformed
 
     /**
      * @param args the command line arguments
@@ -270,12 +436,14 @@ public class FuncionarioInterface extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AutorizarSocioPressed;
     private javax.swing.JButton CadastrarChalesPressed;
     private javax.swing.JButton CadastrarSocioPressed;
     private javax.swing.JButton ChalesPressed;
     private javax.swing.JDesktopPane DesktopMenu;
     private javax.swing.JButton SociosPressed;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
